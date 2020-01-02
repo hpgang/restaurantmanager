@@ -269,7 +269,8 @@
     <td class="inv"></td>
   </tr>
 </table>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>-->
+  <script type="text/javascript" src="<?php echo Config::get('URL'); ?>js/tischreservierung.min.js"></script>
   <script>
   $( ".tisch" ).click(function() {
     $(this).toggleClass("reserviert");
