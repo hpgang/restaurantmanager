@@ -108,6 +108,21 @@
 		$('.timepicker,.timepicker1').wickedpicker({ twentyFour: false });
 	</script>
 	<!-- //Time -->
+	<?php
+        $pdo = new PDO('mysql:host=localhost;dbname=huge;charset=utf8', 'root', 'lbs2019');
+
+        $name = $_POST["name"];
+        $email = $_POST["email"];
+        $datum = $_POST["datum"];
+        $nummer = $_POST["nummer"];
+        $personen_anzahl = $_POST["personen_anzahl"];
+		//test
+        echo $name;
+        echo $email;
+        echo $datum;
+        echo $nummer;
+        echo $personen_anzahl;
+    ?>
 
 </body>
 
