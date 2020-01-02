@@ -28,7 +28,7 @@
 	<h1 class="header">
 		Tisch Reservierung</h1>
 	<div class="appointment-w3">
-		<form action="#" method="post">
+		<form action="/html/reservierungdatenbank/index" method="post">
 			<div class="personal">
 			
 				<div class="main">
@@ -38,11 +38,11 @@
 					</div>
 					<div class="form-left">
 
-						<input type="Email" name="Email" placeholder="Email" required="">
+						<input type="Email" name="email" placeholder="Email" required="">
 					</div>
 					<div class="form-right ">
 
-						<input class="buttom" type="text" name="Telefon Nummer" placeholder="Telefon Nummer" required="">
+						<input class="buttom" type="text" name="telefonnummer" placeholder="Telefon Nummer" required="">
 						<div class="clearfix"></div>
 					</div>
 				</div>
@@ -55,7 +55,7 @@
 
 					
 					<div class="form-left">
-						<input id="datepicker" name="text" type="text" placeholder="Datum" required="">
+						<input id="datepicker" name="datum" type="text" placeholder="Datum" required="">
 						<!--<input type="text" id="timepicker" name="Zeit" class="timepicker form-control hasWickedpicker" placeholder="Zeit" required=""-->
 						<onkeypress="return false;">
 						<div class="clear"></div>
@@ -65,18 +65,18 @@
 				<div class="main">
 
 					<div class="form-left">
-						<select class="form-control">
+						<select class="form-control" name="personen_anzahl">
 					<option value="">Personen</option>
 						<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-					<option>6</option>
-					<option>7</option>
-					<option>8</option>
-					<option>9</option>
-					<option>10</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+						<option>7</option>
+						<option>8</option>
+						<option>9</option>
+						<option>10</option>
 					</select>
 					</div>
 				</div>
@@ -108,21 +108,8 @@
 		$('.timepicker,.timepicker1').wickedpicker({ twentyFour: false });
 	</script>
 	<!-- //Time -->
-	<?php
-        $pdo = new PDO('mysql:host=localhost;dbname=huge;charset=utf8', 'root', 'lbs2019');
-
-        $name = $_POST["name"];
-        $email = $_POST["email"];
-        $datum = $_POST["datum"];
-        $nummer = $_POST["nummer"];
-        $personen_anzahl = $_POST["personen_anzahl"];
-		//test
-        echo $name;
-        echo $email;
-        echo $datum;
-        echo $nummer;
-        echo $personen_anzahl;
-    ?>
+	<body>
+    
 
 </body>
 
