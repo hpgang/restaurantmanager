@@ -28,7 +28,7 @@
 	<h1 class="header">
 		Tisch Reservierung</h1>
 	<div class="appointment-w3">
-		<form action="/html/reservierungdatenbank/index" method="post">
+		<form action="/html/reservieren/savereserve/" method="post">
 			<div class="personal">
 			
 				<div class="main">
@@ -55,7 +55,7 @@
 
 					
 					<div class="form-left">
-						<input id="datepicker" name="datum" type="text" placeholder="Datum" required="">
+						<input id="datepicker" name="datum" type="text" placeholder="Datum" required="" autocomplete="off">
 						<!--<input type="text" id="timepicker" name="Zeit" class="timepicker form-control hasWickedpicker" placeholder="Zeit" required=""-->
 						<onkeypress="return false;">
 						<div class="clear"></div>

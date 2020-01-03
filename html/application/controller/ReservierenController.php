@@ -18,4 +18,14 @@ class ReservierenController extends Controller
     {
         $this->View->render('reservieren/index');
     }
+
+    public function savereserve()
+    {
+        $this->View->render('reservieren/savereserve');
+    }
+
+    public function tischreservierung()
+    {
+        $this->View->render('reservieren/tischreservierung');
+    }
 }
