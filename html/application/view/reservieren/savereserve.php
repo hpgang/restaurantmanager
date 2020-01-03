@@ -16,6 +16,12 @@
         mysqli_select_db($pdo, "huge");
         mysqli_query($pdo, "INSERT INTO `tablereservation` (`name`, `email`, `telefonnummer`, `datum`, `personen_anzahl`) VALUES ('$name', '$email', '$telefonnummer', '$datum', '$personen_anzahl')");
     ?>
+
+<?php
+// PHP permanent URL redirection
+header("Location: /html/reservieren/tischreservierung/", true, 301);
+exit();
+?>
 </body>
 </html>
 
