@@ -20,6 +20,7 @@
 <?php
 // PHP permanent URL redirection
 header("Location: /html/reservieren/tischreservierung/", true, 301);
+//header("Location:" Config::get('URL') . 'reservieren/tischreservierung/' . $user->user_id;)
 exit();
 ?>
 </body>

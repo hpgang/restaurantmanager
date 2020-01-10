@@ -29,6 +29,7 @@
 		Tisch Reservierung</h1>
 	<div class="appointment-w3">
 		<form action="/html/reservieren/savereserve/" method="post">
+		<!--<form action=<?= Config::get('URL') . 'reservieren/savereserve/' . $user->user_id; ?> method="post">-->
 			<div class="personal">
 			
 				<div class="main">
@@ -85,7 +86,7 @@
 			
 			
 			<div class="btnn">
-				<input type="submit" value="Tisch Reservieren">
+				<input type="submit" value="Weiter">
 			</div>
 		</form>
 	</div>

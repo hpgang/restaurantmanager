@@ -28,4 +28,14 @@ class ReservierenController extends Controller
     {
         $this->View->render('reservieren/tischreservierung');
     }
+
+    public function tabledatabase()
+    {
+        $this->View->render('reservieren/tabledatabase');
+    }
+
+    public function abschluss()
+    {
+        $this->View->render('reservieren/abschluss');
+    }
 }
